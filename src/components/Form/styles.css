@@ -1,0 +1,167 @@
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 363px;
+  height: 351px;
+  border: 1px solid #e9ecef;
+  margin: 0 auto;
+  margin-top: 39px;
+}
+form > section > label {
+  margin-top: 38px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  /* identical to box height, or 183% */
+
+  /* grey-100 */
+
+  color: #212529;
+}
+.form-descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section > form > section > input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px;
+  width: 314px;
+  height: 52.8px;
+  background: #f8f9fa;
+  margin-top: 12.1px;
+  /* grey-0 */
+
+  border: 2px solid #f8f9fa;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+section > form > section > p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  /* grey-50 */
+
+  color: #868e96;
+}
+form > section > div > i {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  right: 35px;
+  /* identical to box height, or 167% */
+
+  /* grey-50 */
+
+  color: #868e96;
+}
+.form-valores {
+  display: flex;
+  width: 314px;
+  height: 79px;
+  justify-content: space-between;
+}
+section > form > section > div > input {
+  background: #f8f9fa;
+  /* grey-0 */
+  padding: 20px;
+  width: 128px;
+  height: 48px;
+  border: 2px solid #f8f9fa;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 167% */
+
+  /* grey-50 */
+
+  color: #868e96;
+}
+section > form > section > div > input:focus {
+  background: #f8f9fa;
+  border: 1.2px solid #212529;
+}
+section > form > section > div > input:focus {
+  background: #f8f9fa;
+  border: 1.2px solid #212529;
+}
+section > form > section > div > select {
+  background: #f8f9fa;
+  /* grey-0 */
+  padding: 10px;
+  width: 128px;
+  height: 48px;
+  border: 2px solid #f8f9fa;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+section > form > section > div > select:focus {
+  background: #f8f9fa;
+  border: 1.2px solid #212529;
+}
+section > form > section > div > p {
+  text-align: left;
+}
+.options {
+  width: 128px;
+  height: 35px;
+  background: #f8f9fa;
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+}
+option:hover {
+  background: #e9ecef;
+}
+section > form > button {
+  width: 314px;
+  height: 48px;
+  /* color-primary */
+
+  background: #fd377e;
+  /* color-primary */
+
+  border: 2px solid #fd377e;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 35px;
+  color: #fff;
+}
+section > form > button:hover {
+  background: #e34981;
+  /* color-primary-2 */
+
+  border: 2px solid #e34981;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.negative-value:focus {
+  border: 3px solid red;
+  background-color: rgb(252, 114, 114);
+}
+#form-InputValue::-webkit-inner-spin-button,
+#form-InputValue::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media screen and (min-width: 1036px) {
+  form {
+    margin-left: 10vw;
+  }
+}

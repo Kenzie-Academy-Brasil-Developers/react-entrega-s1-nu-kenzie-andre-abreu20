@@ -1,0 +1,68 @@
+.card-div {
+  display: flex;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+.card-divDescryptionType {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 88px;
+  width: 18.235930735930737vw;
+  margin-left: 14px;
+}
+.card-Description {
+  margin-top: 8px;
+}
+p.card-type {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  /* or 183% */
+
+  /* grey-3 */
+
+  color: #868e96;
+}
+.card-value {
+  width: 11.634199134199134vw;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  /* identical to box height, or 183% */
+
+  /* grey-4 */
+
+  color: #212529;
+}
+button {
+  margin-top: 10px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-radius: 2.46154px;
+  padding-right: 6px;
+  padding-left: 4.5px;
+  padding-bottom: 0px;
+  padding-top: 2px;
+}
+.button-list {
+  background: #e9ecef;
+  border: 10px solid blue;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.button-list:hover {
+  background: #868e96;
+  background: #f8f9fa;
+}
+svg {
+  color: #868e96;
+}
+svg:hover {
+  color: #f8f9fa;
+}
