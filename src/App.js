@@ -15,12 +15,11 @@ function App() {
     return false;
   }
 
-  function handleTotalMoney() {
-    cardList.forEach((element) => {
-      element.type === "Entrada"
-        ? setTotalValue(totalValue + element.value)
-        : setTotalValue(totalValue - element.value);
-    });
+  function handleTotalMoney(card) {
+    const { type, value } = card;
+    type === "Entrada"
+      ? setTotalValue(totalValue + value)
+      : setTotalValue(totalValue - value);
   }
   function handleList(newCard) {
     newCard.description !== "" && newCard.value > 0 && newCard.type !== ""
@@ -35,16 +34,12 @@ function App() {
     setCardList(filteredList);
   }
 
-  function handleTotalMoneyReverse(cardDescription) {
-    cardList.forEach((element) => {
-      if (element.description.includes(cardDescription)) {
-        if (element.type === "Entrada") {
-          setTotalValue(totalValue - element.value);
-        } else {
-          setTotalValue(totalValue + element.value);
-        }
-      }
-    });
+  function handleTotalMoneyReverse(card) {
+    const { type, value } = card;
+    console.log(card);
+    type === "Entrada"
+      ? setTotalValue(totalValue - value)
+      : setTotalValue(totalValue + value);
   }
 
   return (
@@ -60,11 +55,7 @@ function App() {
       >
         <DivTotalValue totalValue={totalValue} />
       </Form>
-      <SectionButtons
-        cardList={cardList}
-        handleFilterList={handleFilterList}
-        handleTotalMoneyReverse={handleTotalMoneyReverse}
-      ></SectionButtons>
+      <SectionButtons></SectionButtons>
       <List
         cardList={cardList}
         handleFilterList={handleFilterList}

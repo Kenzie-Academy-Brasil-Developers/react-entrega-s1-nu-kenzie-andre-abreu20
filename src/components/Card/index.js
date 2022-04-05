@@ -22,7 +22,7 @@ export default function Card({
           className="button-List"
           onClick={() => {
             handleFilterList(card);
-            handleTotalMoneyReverse(card.description);
+            handleTotalMoneyReverse(card);
           }}
         >
           <FaTrash />

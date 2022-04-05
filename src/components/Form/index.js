@@ -22,7 +22,7 @@ export default function Form({
         onSubmit={(event) => {
           event.preventDefault();
           if (card.value && card.description && card.type) {
-            handleTotalMoney();
+            handleTotalMoney(card);
           }
           setDescription("");
           setValue(null);

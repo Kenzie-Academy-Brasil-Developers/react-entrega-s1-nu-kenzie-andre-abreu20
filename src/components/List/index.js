@@ -16,6 +16,7 @@ export default function List({
             cardType={card.type}
             handleFilterList={handleFilterList}
             handleTotalMoneyReverse={handleTotalMoneyReverse}
+            cardList={cardList}
           ></Card>
         );
       })}
